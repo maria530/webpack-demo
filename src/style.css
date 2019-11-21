@@ -1,0 +1,18 @@
+/* @font-face css3的内容，指定名为customedFont的一种字体，并指定在哪里可以找到它的url 
+可以在别的地方通过定义font-family属性的值为这个自定义的字体来使用。
+*/
+
+@font-face {
+    font-family: customedFont;
+    src: url('./font/fontawesome-webfont.ttf');
+}
+
+.hello {
+    color: red;
+    background: url("./img/222.png");
+}
+
+.hello:after {
+    font: normal normal normal 14px/1 customedFont;
+    content: "\f0d8";
+}
